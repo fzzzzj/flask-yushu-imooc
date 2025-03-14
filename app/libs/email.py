@@ -15,7 +15,7 @@ def send_async_email(app, msg):
         try:
             mail.send(msg)
         except Exception as e:
-            pass
+            print(e)
 
 
 def send_mail(to, subject, template, **kwargs):
